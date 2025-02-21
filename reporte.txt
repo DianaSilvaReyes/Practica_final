@@ -1,0 +1,4 @@
+Nombre, Correo, Puntuación
+Juan Pérez, juan@example.com, 85
+María García, maria@example.com, 90
+Luis Ramírez, luis@example.com, 78

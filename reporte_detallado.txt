@@ -1,0 +1,4 @@
+ID, Nombre, Correo, Puntuación, Comentarios
+1, Juan Pérez, juan@example.com, 85, Buen desempeño
+2, María García, maria@example.com, 90, Excelente trabajo
+3, Luis Ramírez, luis@example.com, 78, Necesita mejorar en algunos aspectos
