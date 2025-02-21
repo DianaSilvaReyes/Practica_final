@@ -3,7 +3,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.application import MIMEApplication
 
-# Generar un reporte sencillo en formato de texto
 def generar_reporte(nombre_archivo):
     datos = [
         "Nombre, Correo, Puntuación",
@@ -17,7 +16,7 @@ def generar_reporte(nombre_archivo):
             archivo.write(linea + "\n")
     print(f"✅ Reporte '{nombre_archivo}' generado correctamente.")
 
-# Generar un segundo reporte con más detalles
+
 def generar_reporte_detallado(nombre_archivo):
     datos = [
         "ID, Nombre, Correo, Puntuación, Comentarios",
@@ -31,7 +30,7 @@ def generar_reporte_detallado(nombre_archivo):
             archivo.write(linea + "\n")
     print(f"✅ Reporte detallado '{nombre_archivo}' generado correctamente.")
 
-# Función para enviar correos
+
 def enviar_correo(servidor_smtp, puerto_smtp, correo_remitente, clave_remitente, correo_destinatario, asunto, cuerpo, ruta_archivo=None):
     try:
         print("SMTP (Simple Mail Transfer Protocol) es el protocolo usado para enviar correos electrónicos.")
@@ -63,7 +62,7 @@ def enviar_correo(servidor_smtp, puerto_smtp, correo_remitente, clave_remitente,
     except Exception as e:
         print("❌ Error al enviar correo:", e)
 
-# Menú básico para elegir acción
+
 def menu():
     while True:
         print("\n--- MENÚ PRINCIPAL ---")
@@ -98,5 +97,4 @@ def menu():
         else:
             print("❌ Opción no válida. Inténtalo de nuevo.")
 
-# Ejecutar el menú
 menu()
