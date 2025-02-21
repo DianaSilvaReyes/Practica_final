@@ -34,8 +34,8 @@ def generar_reporte_detallado(nombre_archivo):
 # Función para enviar correos
 def enviar_correo(servidor_smtp, puerto_smtp, correo_remitente, clave_remitente, correo_destinatario, asunto, cuerpo, ruta_archivo=None):
     try:
-        print("ℹSMTP (Simple Mail Transfer Protocol) es el protocolo usado para enviar correos electrónicos.")
-        print("ℹDebes ingresar los datos correctos del servidor SMTP y la autenticación.")
+        print("SMTP (Simple Mail Transfer Protocol) es el protocolo usado para enviar correos electrónicos.")
+        print("Debes ingresar los datos correctos del servidor SMTP y la autenticación.")
         print("Ejemplos de servidores SMTP:")
         print("- Gmail: smtp.gmail.com, puerto 587")
         print("- Outlook/Hotmail: smtp.office365.com, puerto 587")
@@ -81,7 +81,7 @@ def menu():
             nombre_archivo = input("Nombre del archivo de reporte detallado (ejemplo: reporte_detallado.txt): ")
             generar_reporte_detallado(nombre_archivo)
         elif opcion == '3':
-            print("ℹAsegúrate de usar los datos correctos del servidor SMTP y autenticación.")
+            print("Asegúrate de usar los datos correctos del servidor SMTP y autenticación.")
             servidor_smtp = input("Servidor SMTP: ")
             puerto_smtp = int(input("Puerto SMTP: "))
             correo_remitente = input("Correo del remitente: ")
